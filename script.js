@@ -44,5 +44,5 @@ function getAns()
 
 function quit(){
     localStorage.clear();
-    window.location.href = "index.html";
+    window.location.href = "futureprediction/index.html";
 }
