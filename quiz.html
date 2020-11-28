@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <title>Quiz</title>
+        <script src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed:wght@900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+    <body onload="getName();" class="back1">
+        <div class="head welcome">Hello! <span class="welcome" id="names"></span></div>
+        <div class="head "><span class="welcome">Welcome</span> <span class="welcome">to</span> <span class="welcome">Future</span> <span class="welcome">Prediction</span></div>
+        <div class="container mt-5">
+            <div class="row ">
+                <div class="col-lg-5" style="margin-top: 38px;" >
+                    <h2 class="text1">Click On Questions-</h2><br><br>
+                    <div id="hid">
+                    <ul>
+                        <li id="dv1">
+                           <label onclick="copyPara(1)">Will I have a love marriage ? </label>
+                        </li>
+                        <li id="dv11">
+                            <label onclick="copyPara(11)">Will I have an arrange marriage ? </label>
+                         </li>
+                        <li id="dv2">
+                           <label onclick="copyPara(2)">Will I become doctor or enginner in future?</label>
+                        </li>
+                        <li id="dv3">
+                            <label onclick="copyPara(3)">Will I get government job?</label> 
+                        </li>
+                        <li id="dv4">
+                            <label onclick="copyPara(4)">Will I live a long and a healthy life?</label> 
+                        </li>
+                        <li id="dv5">
+                            <label onclick="copyPara(5)">Will I get success soon in life?</label> 
+                        </li>
+                        <li id="dv6">
+                            <label onclick="copyPara(6)">Will I have a big house and car in future?</label> 
+                        </li>
+                        <li id="dv7">
+                            <label onclick="copyPara(7)">Will my parents live a healthy life?</label> 
+                        </li>
+                        <li id="dv8">
+                            <label onclick="copyPara(8)">Will I have a trip to USA, next year?</label> 
+                        </li>
+                        <li id="dv9">
+                            <label onclick="copyPara(9)">When I get married?</label> 
+                        </li>
+                        <li id="dv10">
+                            <label onclick="copyPara(10)">Will I have a trip to GOA?</label> 
+                        </li>
+                        <li id="dv12">
+                            <button onclick="copyPara(12)">Over!</button>
+                        </li>
+                    </ul></div>
+                    <div  ><img class="thank" id="thankk" src="thank.png"  alt="thanku">
+                    <button type="button" class="btn4 third" id="try" onclick="window.location.reload()">Try Again</button>
+                    </div>
+                    
+                </div>
+                <div class="col-lg-6 ml-5">
+                    <h2 class="text1">Your Selected Questions & Click Button to Get Ans-</h2><br><br>
+                    <div id="div2" class="text2"></div><br>
+                    <div id="ans" class="answ "></div><br><br>
+                   
+                    <button onclick="getAns();" id="btn1" class="btn2 third" type="button">Show Ans</button>
+                    <br><br>
+                    <button type="button" class="btn3 third" id="qu" style="display: none;" onclick="quit();" >Quit Game</button>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
